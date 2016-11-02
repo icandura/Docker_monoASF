@@ -9,7 +9,7 @@ RUN yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 RUN yum -y install mono-complete; yum clean all
 RUN yum -y install screen; yum clean all
 RUN ln -s /usr/lib64/libMonoPosixHelper.so /usr/lib/libMonoPosixHelper.so
-RUN curl -O -L $(curl -s https://api.github.com/repos/JustArchi/ArchiSteamFarm/releases/latest | grep 'browser_' | cut -d\" -f4 | grep 'ASF.exe')
+RUN curl -O -L $(curl -s https://api.github.com/repos/JustArchi/ArchiSteamFarm/releases/latest | grep 'browser_' | cut -d\" -f4 | grep 'F.exe')
 
 EXPOSE 22
 EXPOSE 8989
